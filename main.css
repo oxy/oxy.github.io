@@ -75,3 +75,16 @@ div.social img {
     src: url("fonts/JetBrainsMono-Bold.ttf");
     font-weight: bold;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #242424;
+        color: #eeeeee;
+    }
+    header {
+        background-image: linear-gradient(#101010, #242424);
+    }
+    img {
+        filter: invert(1);
+    }
+}
