@@ -57,6 +57,10 @@ div.social img {
     padding-right: 0.5rem;
 }
 
+div.social {
+    line-height: 200%;
+}
+
 @supports (font-variation-settings: 'wdth' 200) {
     @font-face {
       font-family: Manrope;
