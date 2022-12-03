@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Oxylibrium</title>
-    
-        <!-- OpenGraph Data-->
-        <meta property="og:title" content="Lucy">    
-        <meta property="og:description" content="I build software.">
-        <meta property="og:image" content="/images/banner.png">
-        <meta property="og:url" content="https://oxy.github.io" />
-        <meta property="og:locale" content="en_US" />
-
-        <meta name="theme-color" content="#f13300">
-        <meta name="keywords" content="Lucy, developer, github">
-        <meta name="description" content="I build software.">
-
-        <link rel="shortcut icon" href="/images/favicon.png">
-        <link rel="canonical" href="https://oxy.github.io" />
-
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:description" content="I build software.">
-        <meta name="twitter:title" content="Oxylibrium">
-        <meta name="twitter:site" content="@Oxylibrium">
-        <meta name="twitter:image" content="https://oxy.github.io/images/banner.png">
-        <meta name="twitter:creator" content="@Oxylibrium">
-
-        <link rel="stylesheet" href="main.css">
+        <title>Lucy Satheesan</title>
+        <!-- og metadata -->
+        <meta property="og:title" content="Lucy Satheesan">
+        <meta property="og:description" content="activist, developer, engineer.">
     </head>
     <body>
-        <!-- hello professor! :) -->
-        <header>
-            <h1>Hi, I'm Lucy.</h1>
-            <h2>I build software.</h2>
-        </header>
         <div id="content">
-            <div class="section">
-                <h3>about me</h3>
+            <div id="hero">
+                <h2>hi, i'm</h2>
+                <h1>lucy satheesan <span>(she/her)</span></h1>
+                <h2>activist, developer, student.</h2>
+            </div>
+            <h1><a href="#about-me" id="about-me">about me</a></h1>
+            <div>
                 <p>
-                    I’m an aspiring developer, interested in everything to do with computing - from backends and system architecture to web design.
-                    I have a diverse background, and try not to stick to one field, building experience from various domains as I go.
-                    I've been mesmerized by software from childhood, and I want to design and build systems for the future.
+                    I'm a trans woman, software developer, and international student currently studying at Miami University in Oxford, OH.
+                    I want to make the world more equitable, inclusive, and safe&nbsp;- this has taken many forms, from
+                    testifying against anti-trans laws in the state of Ohio to significant original research into exam surveillance software.
                 </p>
             </div>
-            <div class="section">
-                <h3>projects</h3>
-                <div class="cards">
-                    <div class="card">
-                        <h4>Birb</h4>
-                        <img class="logo" src="images/birb.png" alt="Birb Logo">
-                        <span class="icons">
-                            <img src="icons/python.svg" alt="Python">
-                            <img src="icons/discord.svg" alt="Discord">
-                        </span>
-                        <p>
-                            Fun, simple, and lightweight Discord Bot. The core is built to be simple, but expandable, and the bot can be easily self-hosted.
-                        </p>
-                        <span class="links">
-                            <a href="https://github.com/oxy/Nest">
-                                <img src="icons/github.svg" alt="Source Code on GitHub">
-                            </a>
-                            <a href="https://birb.pw/">
-                                <img src="icons/website.svg" alt="Website">
-                            </a>
-                        </span>
-                    </div>
-                    <div class="card">
-                        <h4>Prequel</h4>
-                        <img class="logo" src="images/prequel.png" alt="Prequel Logo">
-                        <div class="icons">
-                            <img src="icons/python.svg" alt="Python">
-                            <img src="icons/database.svg" alt="Database">
-                        </div>
-                        <p>
-                            High performance, simple open-source query generator built for CRUD queries in PostgreSQL.
-                        </p>
-                        <span class="links">
-                            <a href="https://github.com/oxy/prequel"><img src="icons/github.svg" alt="Source Code on GitHub"></a>
-                        </span>
-                    </div>
-                </div>
+            <h1><a href="#projects" id="projects">projects</a></h1>
+            <div>
+                <h2>eM2late (Python, C/C++)</h2>
+                <p>Jun '22 - Present</p>
+                <p>Research project to reverse engineer and document security design in Google Tensor/Titan M2 on Pixel 6.</p>
+                <ul>
+                    <li>Reverse engineered firmware using IDA (armv7), Binary Ninja and Ghidra (RV32)</li>
+                    <li>Fixed bugs and improved performance of Binary Ninja's RV32 lifter plugin</li>
+                    <li>Extended Unicorn with hooks to rapidly prototype behavior for unknown instructions</li>
+                </ul>
+                <h2>Banyan (Rust)</h2>
+                <p>Aug '21 - Mar '22</p>
+                <p>Proof-of-concept filesystem management layer for backups and container builds.</p>
+                <ul>
+                    <li>Wrote and debugged atomic data structures using ASAN/TSAN and Valgrind</li>
+                    <li>Improved performance by ~2x by restructuring code to minimize system calls and string interpolations</li>
+                </ul>
+                <h2>Exam Surveillance Software Analysis (JavaScript, NaCl)</h2>
+                <p>Oct '20 - Mar '21</p>
+                <p>Analyzed exam surveillance tools; work covered by <a href="https://www.nytimes.com/2021/05/09/technology/dartmouth-geisel-medical-cheating.html">New York Times</a>, <a href="https://www.consumerreports.org/digital-security/poor-security-at-online-proctoring-company-proctortrack-may-have-put-student-data-at-risk-a8711230545/">Consumer Reports</a>, <a href="https://www.vice.com/en/article/g5gxg3/proctorio-is-using-racist-algorithms-to-detect-faces">Motherboard.</a></p>
+                <ul>
+                    <li>Built tools to reverse engineer obfuscated JavaScript and Chrome NaCl code</li>
+                    <li>Identified several security vulnerabilities and algorithmic bias issues</li>
+                </ul>
             </div>
-            <div class="section">
-                <h3>contact</h3>
-                <p>
-                    Reach me on the following places: <br/> <br/>
-                    <img class="icon" src="icons/email.svg" alt="Email"> oxylibrium@gmail.com <br/> <br/>
-                    <img class="icon" src="icons/discord.svg" alt="Discord"> Oxylibrium#7680
-                </p>
+            <h1><a href="#experience" id="experience">experience</a></h1>
+            <div>
+                <h2>Resident Assistant</h2>
+                <p>Jan '22 - May '22, Aug '22 - Present, <i>Miami University</i></p>
+                <p>Community building role with strong focus on communication.</p>
+                <ul>
+                    <li>Interacted one-on-one with residents to put them in touch with college resources</li>
+                    <li>Mediated conflicts between residents and performed safety and wellness checks</li>
+                </ul>
+                <h2>Software Engineer (Typescript)</h2>
+                <p>Dec '20 - Aug '21, May - Aug '22, <i>Coder Technologies, Remote</i></p>
+                <p>Engineering roles in several teams, maintaining a fork and building a new open-source product.</p>
+                <ul>
+                    <li>Exposed new product functionality to React.js frontend</li>
+                    <li>Reduced CI times from 30 to 4 minutes by restructuring GitHub Actions pipelines</li>
+                    <li>Improved release delays by a week by leading schedule adjustments to track upstream</li>
+                    <li>Fixed client rendering bugs on iOS, triaged setup issues across Linux distros and architectures</li>
+                </ul>
+                <h2>Winter Teaching Assistant</h2>
+                <p>Jan '22, <i>Miami University, Remote</i></p>
+                <p>Teaching role for a second-semester intro programming course.</p>
+                <ul>
+                    <li>Provided individual assistance with object-oriented programming concepts in Java</li>
+                    <li>Wrote tools in Bash to automate homework grading</li>
+                </ul>
+            </div>
+            <h1><a href="#credits" id="credits">credits</a></h1>
+            <div>
+                <ul>
+                    <li>Font: Alexandria, designed by Mohamed Gaber and Julieta Ulanovsky, SIL Open Font License</li>
+                    <li>Portions of CSS from <a href="https://jgthms.com/minireset.css">minireset.css</a>, (C) Jeremy Thomas, MIT License</li>
+                </ul>
             </div>
         </div>
     </body>

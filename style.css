@@ -1,0 +1,92 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* include alexandria font */
+@font-face {
+    font-family: 'Alexandria';
+    src: url('fonts/Alexandria-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+body {
+    font-family: Alexandria, sans-serif;
+    font-variation-settings: "wght" 300;
+    line-height: 1.6;
+    background-color: #100c05;
+    color: #e0ffff;
+}
+
+#content {
+    display: grid;
+    padding: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+#content > h1 {
+    grid-column: 1;
+    text-align: center;
+    align-items: baseline;
+}
+
+#content > div {
+    grid-column: 1;
+    padding-top: 0.5rem;
+}
+
+h1 {
+    font-size: 2em;
+    font-variation-settings: "wght" 600;
+    color: #5bcefa;
+}
+
+h2, h1>span {
+    font-size: 1.25rem;
+    font-variation-settings: "wght" 400;
+    color: #f5a9b8;
+}
+
+#content > div > :first-child {
+    margin-top: 0;
+}
+
+h1, h2, p {
+    margin: 1rem 0;
+}
+
+ul {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+#hero > * {
+    margin: 0;
+}
+
+a {
+    text-decoration: underline;
+    color: #5bcefa;
+}
+
+h1 > a {
+    text-decoration: none;
+}
+
+h2 + p {
+    margin-top: -0.75rem;
+    font-variation-settings: "wght" 200;
+}
+
+@media screen and (min-width: 60rem) {
+    #content {
+        grid-template-columns: 20% 80%;
+        grid-gap: 2rem;
+    }
+    #content > h1 {
+        margin-top: 0;
+        text-align: right;
+    }
+    #content > div {
+        grid-column: 2;
+    }
+}
